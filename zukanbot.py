@@ -24,13 +24,13 @@ async def on_message(message):
     if message.author.bot:
         return
     if message.content == "<:monb:636725781749301250>" or message.content == "<:monb:640532214517465108>":
-        url = random.choices(urls.keys(), weights=weights)[0]
+        url = random.choices(list(urls.values()), weights=weights)[0]
 
         await message.channel.send(url)
 
 
 
-        #await message.channel.send(urls["000 けつばん"])
+        #await message.channel.send(urls["120 ヒトデマン"])
 
 
 
