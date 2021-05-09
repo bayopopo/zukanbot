@@ -23,7 +23,7 @@ async def on_message(message):
 
   if message.author.bot:
         return
-    if message.content == "<:monbo:636725781749301250>" or message.content == "<:monb:830720172762333236>" or message.content =="<:monb:641248096495599618>" or message.content =="<:pokemon:677029538554839096>" or message.content == "<:pokeball:657822336510197760>":
+    if message.content == "<:monbo:636725781749301250>" or message.content == "<:monb:830720172762333236>" or message.content == "<:monb:840951864127651871>":
         url = random.choices(list(urls.values()), weights=weights)[0]
 
         await message.channel.send(url)
