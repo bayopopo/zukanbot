@@ -21,9 +21,9 @@ async def on_message(message):
 
     weights = [1] * 143 + [1] * 7 + [0.5] + [0.3]
 
-  if message.author.bot:
+    if message.author.bot:
         return
-    if message.content == "<:monbo:636725781749301250>" or message.content == "<:monb:830720172762333236>" or message.content == "<:monb:840951864127651871>":
+    if message.content == "<:monb:641248096495599618>" or message.content =="<:monb:828193362981027880>" or message.content == "<:monb:830720172762333236>":
         url = random.choices(list(urls.values()), weights=weights)[0]
 
         await message.channel.send(url)
@@ -31,7 +31,6 @@ async def on_message(message):
 
 
         #await message.channel.send(urls["120 ヒトデマン"])
-
 
 
 
