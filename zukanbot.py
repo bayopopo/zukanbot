@@ -19,7 +19,7 @@ async def on_ready():
 async def on_message(message):
     global urls
 
-    weights = [1] * 143 + [1] * 7 + [0.3] + [0.1]
+    weights = [1] * 143 + [1] * 7 + [0.3] + [0.3]
 
     if message.author.bot:
         return
