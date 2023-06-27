@@ -1,1 +1,1 @@
-discordbot: python zukanbot.py
+worker: python zukanbot.py
