@@ -1,1 +1,1 @@
-worker: python zukanbot.py
+worker: python main.py
