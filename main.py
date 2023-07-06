@@ -2,6 +2,9 @@ import discord
 import random
 import os
 import json
+from discord_slash import SlashCommand, SlashContext
+# ↓元のコードは client = discord.client()
+bot = discord.Client(intents_discord.Intents.all())
 
 
 with open('pokemon.json', encoding='utf-8') as f:
@@ -25,7 +28,7 @@ async def on_message(message):
         return
     if message.content == "<:monb:1126330987421372426>" or message.content =="<:monb:1044153325723058186>":
         url = random.choices(list(urls.values()), weights=weights)[0]
-
+ print('モンスターボールを受け取りました')
         await message.channel.send(url)
 
 
