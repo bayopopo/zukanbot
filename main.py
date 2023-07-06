@@ -34,4 +34,5 @@ async def on_message(message):
 
 
 
-client.run(os.environ["DISCORD_TOKEN"])
+my_secret = os.environ['DISCORD_TOKEN']
+client.run(my_secret)
