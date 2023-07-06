@@ -2,9 +2,6 @@ import discord
 import random
 import os
 import json
-from discord_slash import SlashCommand, SlashContext
-# ↓元のコードは client = discord.client()
-bot = discord.Client(intents_discord.Intents.all())
 
 
 with open('pokemon.json', encoding='utf-8') as f:
