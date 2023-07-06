@@ -19,19 +19,22 @@ async def on_ready():
 async def on_message(message):
     global urls
 
-    weights = [1] * 143 + [1] * 7 + [0.3] + [0.3]
+    weights = [1] * 143 + [0.5] * 7 + [0.3] + [0.1]
 
     if message.author.bot:
         return
-    if message.content == "<:monb:1126330987421372426>" or message.content =="<:monb:1044153325723058186>":
+    if message.content == "<:monbo:636725781749301250>" or message.content == "<:pokeball:641273768957968404>" or message.content =="<:monb:641248096495599618>" or message.content =="<:pokemon:677029538554839096>" or message.content == "<:pokeball:657822336510197760>":
         url = random.choices(list(urls.values()), weights=weights)[0]
- print('モンスターボールを受け取りました')
+
         await message.channel.send(url)
 
 
 
         #await message.channel.send(urls["120 ヒトデマン"])
 
+
+
+client.run(os.environ["DISCORD_TOKEN"])
 
 
 my_secret = os.environ['DISCORD_TOKEN']
