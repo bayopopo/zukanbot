@@ -28,5 +28,5 @@ async def on_message(message):
 
         await message.channel.send(url)
 
-my_secret = 'NjM2NTYwMTA4Nzc5ODY0MDk1.G7w8uh.eBb30Bu5cfL2aa4u-d3WsYCtiP5ZGMC4JAZawc'
+my_secret = 'YOUR_BOT_TOKEN'
 client.run(my_secret)
